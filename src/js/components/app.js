@@ -10,15 +10,37 @@ const slickSettings = {
     slidesToScroll: 1
 }
 
+const animals = [
+    {
+        picture: 'http://placehold.it/800x800&text=Ferd',
+        title: 'Pferd',
+        sound: ''
+    },
+    {
+        picture: 'http://placehold.it/800x800&text=Muh',
+        title: 'Kuh',
+        sound: ''
+    },
+    {
+        picture: 'http://placehold.it/800x800&text=Kratze',
+        title: 'Katze',
+        sound: ''
+    },
+    {
+        picture: 'http://placehold.it/800x800&text=Wau',
+        title: 'Hund',
+        sound: ''
+    }
+]
+
 export default class App extends React.Component {
 
     render() {
         return (
             <Slick {...slickSettings}>
-                <div><Animal picture="http://placehold.it/800x800" title="Pferd"/></div>
-                <div><Animal picture="http://placehold.it/800x800" title="Kuh"/></div>
-                <div><Animal picture="http://placehold.it/800x800" title="Katze"/></div>
-                <div><Animal picture="http://placehold.it/800x800" title="Hund"/></div>
+                {animals.map((animal, i) => {
+                    return <div key={i}><Animal {...animal} /></div>
+                })}
             </Slick>
         )
     }
