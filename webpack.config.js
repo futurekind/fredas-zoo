@@ -21,6 +21,10 @@ module.exports = {
             {
                 test: /\.(png|jpg|svg)$/,
                 loader: 'url?limit=8000!img'
+            },
+            {
+                test: /\.wav$/,
+                loader: 'file'
             }
         ]
     },
