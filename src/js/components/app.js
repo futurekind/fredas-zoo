@@ -24,7 +24,7 @@ const animals = [
     {
         picture: 'http://placehold.it/800x800&text=Kratze',
         title: 'Katze',
-        sound: ''
+        sound: require('../../assets/animals/sounds/cat.wav')
     },
     {
         picture: 'http://placehold.it/800x800&text=Wau',
