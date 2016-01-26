@@ -52,7 +52,7 @@ export default class App extends React.Component {
     render() {
         return (
             <Slick {...slickSettings}>
-                {this.state.animals.map((animal, i) => {
+                {animals.map((animal, i) => {
                     return <div key={i}><Animal {...animal} /></div>
                 })}
             </Slick>
