@@ -9,5 +9,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: rgb(200, 185, 157) url('../assets/bg.png')
+    background: rgb(200, 185, 157) url('../assets/bg.png');
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        background-image: url('../assets/bg@2x.png');
+        background-size: 810px 119px;
+    }
 }
