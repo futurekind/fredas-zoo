@@ -13,25 +13,51 @@ const slickSettings = {
 
 const animals = [
     {
-        picture: 'http://placehold.it/800x800&text=Ferd',
+        picture: require('../../assets/animals/images/horse.jpg'),
         title: 'Pferd',
-        sound: ''
+        sound: require('../../assets/animals/sounds/horse.wav')
     },
     {
-        picture: 'http://placehold.it/800x800&text=Muh',
+        picture: require('../../assets/animals/images/cow.jpg'),
         title: 'Kuh',
-        sound: ''
+        sound: require('../../assets/animals/sounds/cow.wav')
     },
     {
-        picture: 'http://placehold.it/800x800&text=Kratze',
-        title: 'Katze',
+        picture: require('../../assets/animals/images/dog.jpg'),
+        title: 'Hund',
+        sound: require('../../assets/animals/sounds/dog.wav')
+    },
+    {
+        picture: require('../../assets/animals/images/duck.jpg'),
+        title: 'Ente',
+        sound: require('../../assets/animals/sounds/duck.wav')
+    },
+    {
+        picture: require('../../assets/animals/images/goat.jpg'),
+        title: 'Ziege',
+        sound: require('../../assets/animals/sounds/goat.wav')
+    },
+    {
+        picture: require('../../assets/animals/images/pig.jpg'),
+        title: 'Schwein',
+        sound: require('../../assets/animals/sounds/pig.wav')
+    },
+    {
+        picture: require('../../assets/animals/images/rooster.jpg'),
+        title: 'Hahn',
+        sound: require('../../assets/animals/sounds/rooster.wav')
+    },
+    {
+        picture: require('../../assets/animals/images/sheep.jpg'),
+        title: 'Schaaf',
+        sound: require('../../assets/animals/sounds/sheep.wav')
+    },
+    {
+        picture: require('../../assets/animals/images/cat.jpg'),
+        title: 'Die Kratze',
         sound: require('../../assets/animals/sounds/cat.wav')
     },
-    {
-        picture: 'http://placehold.it/800x800&text=Wau',
-        title: 'Hund',
-        sound: ''
-    }
+
 ]
 
 export default class App extends React.Component {
