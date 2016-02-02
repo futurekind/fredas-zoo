@@ -16,9 +16,13 @@ class Animal extends React.Component {
     }
 
     render() {
+        const animalImgStyle = {
+            backgroundImage: `url(${this.props.picture})`,
+        }
+
         return (
             <div className="animal" onClick={this.handleClick}>
-                <img src={this.props.picture} alt={this.props.title} className="animal__img" />
+                <div className="animal__img" style={animalImgStyle} />
                 <div className="animal__sticker">
                     <h1 className="animal__title">{this.props.title}</h1>
                 </div>

@@ -1,10 +1,10 @@
 {
   "name": "fredas-zoo",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": " rm -rf && webpack-dev-server --hot --progress --inline",
+    "start": " rm -rf && webpack-dev-server --hot --progress --inline --port 8000",
     "build": "rm -rf dist && NODE_ENV=production webpack -p",
     "deploy": "npm run build && node gh-pages"
   },

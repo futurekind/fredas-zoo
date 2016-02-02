@@ -1,13 +1,18 @@
 .animal {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 100px 0 0;
 
     &__img {
-        width: 100%;
+        width: calc(100vh - 300px);
+        height: calc(100vh - 300px);
+        margin: 0 auto;
         border: 10px solid #47922E;
         box-shadow: rgba(#000, .4) 1px 1px 2px;
         transform: rotate(1deg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 
     &__sticker {

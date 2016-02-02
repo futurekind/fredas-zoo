@@ -30,15 +30,15 @@ module.exports = {
     },
     plugins: getPlugins([
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            favicon: './src/assets/i/favicon-32x32.png'
         })
     ])
 }
 
 function getEntries(entries) {
     if(process.env.NODE_ENV !== 'production') {
-        console.log('pushing entries');
-        entries.push('webpack-dev-server/client?http://localhost:8080')
+        entries.push('webpack-dev-server/client?http://localhost:8000')
         entries.push('webpack/hot/only-dev-server')
     }
     return entries
@@ -46,7 +46,6 @@ function getEntries(entries) {
 
 function getPlugins(plugins) {
     if(process.env.NODE_ENV !== 'production') {
-        console.log('plugins');
         plugins.push(new webpack.HotModuleReplacementPlugin())
     }
     return plugins;
@@ -54,7 +53,6 @@ function getPlugins(plugins) {
 
 function getJsLoaders() {
     if(process.env.NODE_ENV !== 'production') {
-        console.log('react-hot');
         return ['react-hot', 'babel']
     }
     return ['babel'];
