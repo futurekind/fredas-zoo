@@ -54,7 +54,7 @@ const animals = [
     },
     {
         picture: require('../../assets/animals/images/cat.jpg'),
-        title: 'Die Kratze',
+        title: 'Katze',
         sound: require('../../assets/animals/sounds/cat.wav')
     },
 
