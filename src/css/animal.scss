@@ -51,7 +51,11 @@
         margin: 0;
         text-align: center;
         font-family: 'Gloria Hallelujah', cursive;
-        font-size: 68px;
+        font-size: 40px;
         color: #085894;
+
+        @media only screen and (min-width: 40em) {
+            font-size: 68px;
+        }
     }
 }
